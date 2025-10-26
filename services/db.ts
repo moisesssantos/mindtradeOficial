@@ -53,3 +53,8 @@ export async function deleteItem(type: string, id: string | number) {
     return { success: false, message: err.message }
   }
 }
+// --- funções temporárias para manter o Dashboard funcionando ---
+export function getTradings() {
+  console.warn("getTradings() temporário — ainda não conectado ao NeonDB")
+  return []
+}
