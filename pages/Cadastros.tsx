@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BaseItem, DataType } from '../types';
-import { getItems, addItem, updateItem, deleteItem } from '../service/db';
+import { getItems, addItem, updateItem, deleteItem } from '../services/db';
 import Card from '../components/ui/Card';
 import { Edit, Trash2, Save, X } from 'lucide-react';
 
