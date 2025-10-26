@@ -58,3 +58,22 @@ export function getTradings() {
   console.warn("getTradings() temporário — ainda não conectado ao NeonDB")
   return []
 }
+// --- funções temporárias para manter o Dashboard e Reports funcionando ---
+export function getTradings() {
+  console.warn("getTradings() temporário — ainda não conectado ao NeonDB")
+  // retorna uma estrutura simulada para não quebrar o build
+  return [
+    {
+      id: "temp-1",
+      operar: false,
+      concluido: false,
+      id_equipe_casa: "",
+      id_equipe_fora: "",
+      id_competicao: "",
+      methodExecutions: [],
+      data_hora_registro: new Date().toISOString(),
+      auditLog: [],
+    },
+  ]
+}
+
